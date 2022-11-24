@@ -17,9 +17,12 @@ public class GradePointAverage {
         System.out.println("History grade:");
         history = input.nextInt();
 
-        float gpa = (math + physics + history) / 3;
+        double gpa = (math + physics + history) / 3;
+
+        String status = gpa >= 60 ? "You Passed" : "You Failed";
 
         System.out.println("Your GPA: " + gpa);
+        System.out.println(status);
 
 
 
